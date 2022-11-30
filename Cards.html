@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>  
+    <!--Minified Materializecss JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <script>
+          $(document).ready(function(){
+            $('.tabs').tabs();
+            $('.datepicker').datepicker();
+            $('.timepicker').timepicker();
+            $('select').formSelect();
+            $('.chips').chips();
+  $('.chips-initial').chips({
+    data: [{
+      tag: 'Apple',
+    }, {
+      tag: 'Microsoft',
+    }, {
+      tag: 'Google',
+    }],
+  });
+  $('.chips-placeholder').chips({
+    placeholder: 'Enter a tag',
+    secondaryPlaceholder: '+Tag',
+  });
+  $('.chips-autocomplete').chips({
+    autocompleteOptions: {
+      data: {
+        'Apple': null,
+        'Microsoft': null,
+        'Google': null
+      },
+      limit: Infinity,
+      minLength: 1
+    }
+  });
+          });
+
+        </script>
+    <style>
+        body {
+          font-family: cursive;
+        }
+    </style>    
+    <title>Cards</title>
+
+        
+
+
+</head>
+<body>
+
+        <div class="container">
+            <div class="center-align"><h3> Cards </h3></div>
+            <div class="row">
+        <div class="col s12 m6">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title center-align">Web Designers</span>
+              <p>They are responsible for designing and building the interface, navigation and aesthetic of websites for businesses and clients. Likely working in the IT team of an organisation or for a digital design agency that services clients, Web Designers should possess a range of skills and qualities.</p>
+            </div>
+            <div class="card-action">
+              <a href="https://www.roberthalf.com.au/employers/it-technology/web-designer-jobs#:~:text=Web%20Designers%20are%20responsible%20for,range%20of%20skills%20and%20qualities." target="_blank">Intro</a>
+              <a href="https://www.prospects.ac.uk/careers-advice/what-can-i-do-with-my-degree/web-design-and-development" target="_blank">Jobs!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+            <div class="card blue-grey darken-1">
+              <div class="card-content white-text">
+                <span class="card-title center-align">Web Designers</span>
+                <p>They are responsible for designing and building the interface, navigation and aesthetic of websites for businesses and clients. Likely working in the IT team of an organisation or for a digital design agency that services clients, Web Designers should possess a range of skills and qualities.</p>
+              </div>
+              <div class="card-action">
+                <a href="https://www.roberthalf.com.au/employers/it-technology/web-designer-jobs#:~:text=Web%20Designers%20are%20responsible%20for,range%20of%20skills%20and%20qualities." target="_blank">Intro</a>
+                <a href="https://www.prospects.ac.uk/careers-advice/what-can-i-do-with-my-degree/web-design-and-development" target="_blank">Jobs!</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+
+
+    <!-- Image Card -->
+    <div class="container">
+        <div class="row">
+        <h3> Image Card </h3>
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-landscape-1648265299.jpg?crop=0.676xw:1.00xh;0.148xw,0&resize=640:*" alt="">
+              <span class="card-title">Adventure</span>
+            </div>
+            <div class="card-content">
+              <p>Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking. -Steve Jobs</p>
+            </div>
+            <div class="card-action">
+              <a href="https://blog.bambatravel.com/top-10-adventure-destinations/" target="_blank">Click here for more!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-landscape-1648265299.jpg?crop=0.676xw:1.00xh;0.148xw,0&resize=640:*" alt="">
+                <span class="card-title">Adventure</span>
+              </div>
+              <div class="card-content">
+                <p>Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking. -Steve Jobs</p>
+              </div>
+              <div class="card-action">
+                <a href="https://blog.bambatravel.com/top-10-adventure-destinations/" target="_blank">Click here for more!</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+
+<!-- FABs in Cards -->
+
+        <div class="container">
+            <h3> FABs </h3>
+    <div class="row">
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="http://1.bp.blogspot.com/_LX4l6-F8Jhk/Srw2vvSM6GI/AAAAAAAAA3k/w-5ZsEpRHAo/s400/philippine_flag.jpg" alt="">
+              <span class="card-title">Card Title</span>
+              <a class="btn-floating halfway-fab waves-effect waves-light green lighten-3"><i class="material-icons">add</i></a>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Horizontal card -->
+
+        <div class="container">
+    <div class="col s12 m7">
+        <h3 class="header">Horizontal Card</h3>
+        <div class="card horizontal">
+          <div class="card-image">
+            <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1001491_11-2e0fa5c.jpg?resize=768,574" alt="">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>Carbonara is an Italian pasta dish from Rome made with eggs, hard cheese, cured pork and black pepper. The dish arrived at its modern form, with its current name, in the middle of the 20th century. The cheese is usually Pecorino Romano, Parmigiano-Reggiano, or a combination of the two.</p>
+            </div>
+            <div class="card-action">
+              <a href="https://panlasangpinoy.com/carbonara-recipe-filipino-style-knr-bc/" target="_blank">See Recipe</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Card Reveal -->
+        
+      <div class="container">
+        <h4> Card Reveal </h4>
+    <div class="card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="speedy-spaghetti-arrabbiata-featured-e1649949762421.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+        <p><a href="#">This is a link</a></p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+      </div>
+    </div>
+  </div>
+
+<!-- Tabs in cards -->
+
+      <div class="container">
+        <h4> Tabs in Cards </h4>
+        <div class="card">
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-tabs">
+            <ul class="tabs tabs-fixed-width">
+              <li class="tab"><a href="#test4">Test 1</a></li>
+              <li class="tab"><a class="active" href="#test5">Test 2</a></li>
+              <li class="tab"><a href="#test6">Test 3</a></li>
+            </ul>
+          </div>
+          <div class="card-content grey lighten-4">
+            <div id="test4">Test 1</div>
+            <div id="test5">Test 2</div>
+            <div id="test6">Test 3</div>
+          </div>
+        </div>
+      </div>
+
+<!-- Card sizes -->
+
+<!-- Card Panel -->
+
+        <div class="container">
+          <H4> Card Panel </H4>
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card-panel teal">
+            <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+            </span>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card-panel teal">
+            <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+            </span>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card-panel teal">
+            <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Radio Buttons -->
+
+  <div class="container">
+  <h4> Radio buttons </h4>
+      <form action="#">
+        <p>
+          <label>
+            <input name="group1" type="radio" checked />
+            <span>Red</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input name="group1" type="radio" />
+            <span>Yellow</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input class="with-gap" name="group1" type="radio"  />
+            <span>Green</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input name="with-gap" type="radio" disabled="disabled" />
+            <span>Brown</span>
+          </label>
+        </p>
+      </form>
+    </div>
+
+<!-- Chips -->
+
+        <div class="container">
+          <h4> Chips </h4>
+          <div class="chip">
+            <img src="ferlyn.jpg.jpg" alt="Contact Person">
+            Jane Doe
+            <i class="close material-icons">close</i>
+          </div>
+          <div class="chip">
+            <img src="ferlyn.jpg.jpg" alt="Contact Person">
+            Jane Doe
+            <i class="close material-icons">close</i>
+          </div>
+          <div class="chip">
+            Tag
+            <i class="close material-icons">close</i>
+          </div>
+        </div>
+
+<!-- Javascript Plugin -->
+
+          <div class="container">
+            <h4> Plugins </h4>
+        <div class="chips"></div>
+        <div class="chips chips-initial"></div>
+        <div class="chips chips-placeholder"></div>
+        <div class="chips chips-autocomplete"></div>
+      </div>
+
+
+        <!-- Customizable input  -->
+        <div class="chips">
+          <input class="custom-class">
+        </div>
+
+<!-- Switches -->
+
+          <div class="container">
+            <h4> Switches </h4>
+            <div class="switch">
+              <label>
+                Off
+                <input type="checkbox">
+                <span class="lever"></span>
+                On
+              </label>
+            </div>
+            
+            <div class="switch">
+              <label>
+                Off
+                <input type="checkbox">
+                <span class="lever"></span>
+                On
+              </label>
+            </div>
+          
+            <!-- Disabled Switch -->
+            <div class="switch">
+              <label>
+                Off
+                <input disabled type="checkbox">
+                <span class="lever"></span>
+                On
+              </label>
+            </div>
+          </div>
+
+<!-- Checkboxes -->
+
+          <div class="container">
+            <h4> Checkboxes </h4>
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>Red</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" checked="checked" />
+              <span>Yellow</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" class="filled-in" checked="checked" />
+              <span>Filled in</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input id="indeterminate-checkbox" type="checkbox" />
+              <span>Indeterminate Style</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" checked="checked" />
+              <span>Green</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>Brown</span>
+            </label>
+          </p>
+        </form>
+      </div>
+
+<!-- Pickers -->
+
+        <div class="container">
+     <input type="text" class="datepicker">
+    </div>
+
+    <div class="container">
+    <input type="text" class="timepicker">
+  </div>
+
+  <!-- Inputs -->
+
+  <div class="container">
+    <h4> Inputs </h4>
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+          <label for="first_name">Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+          <label for="disabled">Disabled</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password" type="password" class="validate">
+          <label for="password">Password</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          This is an inline input field:
+          <div class="input-field inline">
+            <input id="email_inline" type="email" class="validate">
+            <label for="email_inline">Email</label>
+            <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Custom Error or Success Messages -->
+
+<div class="container">
+  <h4> Custom Error or Success Messages </h4>
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+          <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<!-- prefilling text inputs -->
+
+    <div class="container">
+    <div class="row">
+      <div class="input-field col s6">
+        <input value="Alvin" id="first_name2" type="text" class="validate">
+        <label class="active" for="first_name2">First Name</label>
+      </div>
+      <div class="input-field col s6">
+        <input value="Alvin" id="first_name2" type="text" class="validate">
+        <label class="active" for="first_name2">Last Name</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Icon Prefixes -->
+
+  <div class="container">
+    <h4> icon prefixes </h4>
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="icon_prefix" type="text" class="validate">
+          <label for="icon_prefix">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">phone</i>
+          <input id="icon_telephone" type="tel" class="validate">
+          <label for="icon_telephone">Telephone</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="icon_prefix" type="text" class="validate">
+          <label for="icon_prefix">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="icon_prefix" type="text" class="validate">
+          <label for="icon_prefix">First Name</label>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Textarea -->
+
+    <div class="container">
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Textarea</label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+<!-- Icon -->
+
+      <div class="container">
+    <div class="row">
+      <form class="col s6">
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">mode_edit</i>
+            <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+            <label for="icon_prefix2">First Name</label>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">mode_edit</i>
+            <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+            <label for="icon_prefix2">First Name</label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+<!-- Select -->
+
+    <div class="container">
+    <div class="input-field col s12">
+      <select>
+        <option value="" disabled selected>Choose your option</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+      <label>Materialize Select</label>
+    </div>
+
+    <div class="input-field col s12">
+      <select multiple>
+        <option value="" disabled selected>Choose your option</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+      <label>Materialize Multiple Select</label>
+    </div>
+
+    <div class="input-field col s12">
+      <select>
+        <optgroup label="team 1">
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+        </optgroup>
+        <optgroup label="team 2">
+          <option value="3">Option 3</option>
+          <option value="4">Option 4</option>
+        </optgroup>
+      </select>
+      <label>Optgroups</label>
+    </div>
+    <div class="input-field col s12 m6">
+      <select class="icons">
+        <option value="" disabled selected>Choose your option</option>
+        <option value="" data-icon="images/sample-1.jpg">example 1</option>
+        <option value="" data-icon="images/office.jpg">example 2</option>
+        <option value="" data-icon="images/yuna.jpg">example 3</option>
+      </select>
+      <label>Images in select</label>
+    </div>
+    <div class="input-field col s12 m6">
+      <select class="icons">
+        <option value="" disabled selected>Choose your option</option>
+        <option value="" data-icon="images/sample-1.jpg" class="left">example 1</option>
+        <option value="" data-icon="images/office.jpg" class="left">example 2</option>
+        <option value="" data-icon="images/yuna.jpg" class="left">example 3</option>
+      </select>
+      <label>Images in select</label>
+    </div>
+  
+    <label>Browser Select</label>
+    <select class="browser-default">
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+  </div>
+
+  
+</body>
+</html>
